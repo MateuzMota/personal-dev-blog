@@ -1,5 +1,6 @@
 @import "_header";
 @import "_index";
+@import "_show";
 
 * {
   margin: 0;
