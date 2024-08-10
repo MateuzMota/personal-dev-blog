@@ -2,7 +2,8 @@
 
 <div id='posts'>
   <% @articles.each do |article| %>
-    <strong> <% article.title %> </strong>
-    <p> <% article.content %> </p>
+    <p><%= link_to article.title, article %></p>
   <% end %>
+
+  <%= link_to "Novo post", new_article_path %>
 </div>
