@@ -1,4 +1,8 @@
-<h1>Post<h1>
+<div id="show__wrapper">
+  <div id="show__content">
+    <h1><%= @article.title %></h1>
+    <%= I18n.l(@article.created_at, format: :custom_datetime) %>
 
-<h3><%= @article.title %></h3>
-<p><%= @article.content %></p>
+    <div id="show__divider"></div>
+    <p><%= @article.content %></p>
+</div></div>

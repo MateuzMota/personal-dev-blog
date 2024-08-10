@@ -1,0 +1,25 @@
+pt-BR:
+  date:
+    formats:
+      default: "%d/%m/%Y"
+      long: "%d de %B de %Y"
+      short: "%d de %B" 
+      custom_datetime: "%d de %B de %Y, %H:%M h"
+    month_names: 
+      - "~"
+      - Janeiro
+      - Fevereiro
+      - Março
+      - Abril
+      - Maio
+      - Junho
+      - Julho
+      - Agosto
+      - Setembro
+      - Outubro
+      - Novembro
+      - Dezembro
+
+  time:
+    formats:
+      custom_datetime: "%d de %B de %Y, %H:%M h"
