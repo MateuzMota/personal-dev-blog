@@ -1,9 +1,10 @@
-<h1>Últimas postagens</h1>
-
-<div id='posts'>
-  <% @articles.each do |article| %>
-    <p><%= link_to article.title, article %></p>
-  <% end %>
-
-  <%= link_to "Novo post", new_article_path %>
+<div id="index__wrapper">
+  <div id="index__content">
+    <ul>
+      <% @articles.each do |article| %>
+        <li><%= link_to article.title, article %></li>
+      <% end %>
+    </ul>
+    <%= link_to "Novo post", new_article_path %>
+  </div>
 </div>
