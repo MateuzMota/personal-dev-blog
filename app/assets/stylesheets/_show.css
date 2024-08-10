@@ -26,6 +26,7 @@
 #show__header h1 {
   font-size: 2rem;
   color: #333;
+  line-height: 1;
 }
 
 #show__divider {
