@@ -29,6 +29,8 @@ gem "jbuilder"
 # Solve psych version bug
 gem "psych", "~> 4.0"
 
+gem 'solargraph', group: :development
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
