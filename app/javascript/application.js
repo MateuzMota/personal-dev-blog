@@ -2,3 +2,5 @@
 import "@hotwired/turbo-rails"
 import "controllers"
 import "./_divider"
+import "trix"
+import "@rails/actiontext"

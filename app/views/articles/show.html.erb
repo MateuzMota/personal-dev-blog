@@ -5,5 +5,5 @@
       <%= I18n.l(@article.created_at, format: :custom_datetime) %>
     </div>
     <div id="show__divider"></div>
-    <p><%= @article.content %></p>
+    <p><%= @article.content.to_s.html_safe %></p>
 </div></div>
