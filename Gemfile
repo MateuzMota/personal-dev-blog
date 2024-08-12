@@ -31,6 +31,8 @@ gem "psych", "~> 4.0"
 
 gem 'solargraph', group: :development
 
+gem 'ruby-vips'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
