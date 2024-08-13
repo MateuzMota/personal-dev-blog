@@ -1,19 +1,25 @@
-<h1>Nova postagem</h1>
+<div id="new__wrapper">
+  <div id="new__content">
+    <form action="/articles" accept-charset="UTF-8" method="post">
+      <div id="new__header">
+        <h1>Nova publicação</h1>
+        <div id="show__divider"></div>
+      </div>
 
-<form action="/articles" accept-charset="UTF-8" method="post">
- <div>
-    <label for="article_title">Title</label><br>
-    <input type="text" name="article[title]" id="article_title">
+      <div id="new__form_title">
+        <label for="article_title">Título</label>
+        <input type="text" name="article[title]" id="article_title">
+      </div>
+
+      <div>
+        <input id="article_content" name="article[content]" type="hidden">
+
+        <trix-editor input="article_content" class="trix-content"></trix-editor>
+      </div>
+
+      <div>
+        <input type="submit" name="commit" value="Create Article" data-disable-with="Create Article">
+      </div>
+    </form>
   </div>
-
-  <div>
-    <label for="article_content">Content</label><br>
-    <input id="article_content" name="article[content]" type="hidden">
-
-    <trix-editor input="article_content" class="trix-content"></trix-editor>
-  </div>
-
-  <div>
-    <input type="submit" name="commit" value="Create Article" data-disable-with="Create Article">
-  </div>
-</form>
+</div>

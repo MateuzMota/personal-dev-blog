@@ -1,0 +1,21 @@
+#new__wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+
+#new__content {
+  width: 100%;
+  max-width: 1080px;
+  padding: 24px 16px;
+  background-color: #ffffff;
+  border: 1px solid gray;
+}
+
+#new__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

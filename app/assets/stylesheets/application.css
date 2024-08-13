@@ -1,6 +1,7 @@
 @import "_header";
 @import "_index";
 @import "_show";
+@import "_new";
 @import "_trix_overlays";
 
 * {
