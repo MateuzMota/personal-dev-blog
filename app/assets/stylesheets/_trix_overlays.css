@@ -1,7 +1,6 @@
 trix-editor {
   border: 1px solid #bbb;
   border-radius: 3px;
-  margin: 12px;
   padding: 0.4em 0.6em;
   min-height: 10em;
   outline: none;
@@ -14,4 +13,24 @@ trix-editor {
 .trix-content ul,
 .trix-content ol {
   padding-left: 20px;
+}
+
+#trix-toolbar-1 {
+  white-space: wrap;
+}
+
+#trix-toolbar-1 .trix-button-row button {
+  background-color: #8c7ae6;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 4px 8px;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.attachment__caption {
+  display: none;
 }

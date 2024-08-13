@@ -20,7 +20,6 @@
   align-items: center;
 }
 
-
 #new__form_title {
   display: flex;
   flex-direction: column;
@@ -41,4 +40,11 @@
   max-width: 720px;
   border: 1px solid gray;
   font-size: 1.6rem;
+}
+
+#new__form_content {
+  margin: 24px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
