@@ -1,6 +1,7 @@
 @import "_header";
 @import "_index";
 @import "_show";
+@import "_trix_overlays";
 
 * {
   margin: 0;

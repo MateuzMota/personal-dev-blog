@@ -1,0 +1,17 @@
+trix-editor {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  margin: 12px;
+  padding: 0.4em 0.6em;
+  min-height: 10em;
+  outline: none;
+}
+
+.trix-content {
+  font-size: 1.2rem;
+}
+
+.trix-content ul,
+.trix-content ol {
+  padding-left: 20px;
+}
