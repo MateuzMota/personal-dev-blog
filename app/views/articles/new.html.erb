@@ -1,19 +1,19 @@
 <h1>Nova postagem</h1>
 
-<div>
-  <%= form_with model: @article do |form| %>
-    <div>
-      <%= form.label :title %>
-      <%= form.text_field :title %>
-    </div>
+<form action="/articles" accept-charset="UTF-8" method="post">
+ <div>
+    <label for="article_title">Title</label><br>
+    <input type="text" name="article[title]" id="article_title">
+  </div>
 
-    <div>
-      <%= form.label :content %>
-      <%= form.rich_text_area :content %>
-    </div>
+  <div>
+    <label for="article_content">Content</label><br>
+    <input id="article_content" name="article[content]" type="hidden">
 
-    <div>
-      <%= form.submit %>
-    </div>
-  <% end %>
-</div>
+    <trix-editor input="article_content" class="trix-content"></trix-editor>
+  </div>
+
+  <div>
+    <input type="submit" name="commit" value="Create Article" data-disable-with="Create Article">
+  </div>
+</form>
