@@ -1,25 +1,24 @@
 <div id="new__wrapper">
   <div id="new__content">
-    <form action="/articles" accept-charset="UTF-8" method="post">
+    <%= form_with model: @article, local: true do |form| %>
       <div id="new__header">
         <h1>Nova publicação</h1>
         <div id="show__divider"></div>
       </div>
 
       <div id="new__form_title">
-        <label for="article_title">Título</label>
-        <input type="text" name="article[title]" id="article_title">
+        <%= form.label :title, "Título" %>
+        <%= form.text_field :title %>
       </div>
 
       <div id="new__form_content">
-        <input id="article_content" name="article[content]" type="hidden">
-
-        <trix-editor input="article_content" class="trix-content"></trix-editor>
+        <%= form.hidden_field :content, id: "article_content" %>
+        <%= form.rich_text_area :content, class: "trix-content" %>
       </div>
 
       <div id="new__form_button">
-        <input type="submit" name="commit" value="Create Article" data-disable-with="Create Article">
+        <%= form.submit "Create Article" %>
       </div>
-    </form>
+    <% end %>
   </div>
 </div>
