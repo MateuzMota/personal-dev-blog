@@ -33,6 +33,8 @@ gem 'solargraph', group: :development
 
 gem 'ruby-vips'
 
+gem 'devise'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
