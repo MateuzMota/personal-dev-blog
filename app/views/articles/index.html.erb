@@ -1,7 +1,7 @@
 <div id="index__wrapper">
   <div id="index__content">
     <ul id="index__list_of_articles">
-      <% @articles.each do |article| %>
+      <% @articles.reverse_each do |article| %>
         <li><%= link_to article.title, article %></li>
       <% end %>
     </ul>
