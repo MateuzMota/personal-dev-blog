@@ -40,7 +40,7 @@
   background-color: #ffffff;
 }
 
-#index__list_of_articles > li:not(:last-child)::after {
+#index__list_of_articles > div:not(:last-child)::after {
   content: "";
   display: block;
   margin: 24px auto 0px auto;
@@ -48,4 +48,11 @@
   height: 4px;
   border-radius: 8px;
   background-color: #ffffff;
+}
+
+#index__list_of_articles span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
