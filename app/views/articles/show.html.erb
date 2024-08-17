@@ -2,7 +2,7 @@
   <div id="show__content">
     <div id="show__header">
       <h1><%= @article.title %></h1>
-      <%= I18n.l(@article.created_at, format: :custom_datetime) %>
+      <%= I18n.l(@article.created_at, format: :full_datetime) %>
     </div>
     <div id="show__divider"></div>
     <div class="trix-content"><%= @article.content.to_s.html_safe %></div>

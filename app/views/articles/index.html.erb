@@ -3,7 +3,7 @@
     <ul id="index__list_of_articles">
       <% @articles.reverse_each do |article| %>
         <div>
-            <span><li><%= link_to article.title, article %></li><%= I18n.l(article.created_at, format: :custom_datetime) %></span>
+            <span><li><%= link_to article.title, article %></li><%= I18n.l(article.created_at, format: :short_datetime) %></span>
         </div>
       <% end %>
     </ul>

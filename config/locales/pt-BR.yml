@@ -3,9 +3,9 @@ pt-BR:
     formats:
       default: "%d/%m/%Y"
       long: "%d de %B de %Y"
-      short: "%d de %B" 
-      custom_datetime: "%d de %B de %Y, %H:%M h"
-    month_names: 
+      short: "%d de %B"
+      full_datetime: "%d de %B de %Y, %H:%M h"
+    month_names:
       - "~"
       - Janeiro
       - Fevereiro
@@ -22,4 +22,5 @@ pt-BR:
 
   time:
     formats:
-      custom_datetime: "%d de %B de %Y, %H:%M h"
+      full_datetime: "%d de %B de %Y, %H:%M h"
+      short_datetime: "%d de %B"
